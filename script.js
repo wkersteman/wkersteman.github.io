@@ -11,6 +11,8 @@ const daysBadgeValue = document.getElementById("days-badge-value");
 const daysBadgeCaption = document.getElementById("days-badge-caption");
 const weatherStatusEl = document.getElementById("weather-status");
 const weatherCardsEl = document.getElementById("weather-cards");
+const pageButtons = document.querySelectorAll("[data-page-target]");
+const pagePanels = document.querySelectorAll("[data-page]");
 let intervalId = null;
 
 function padTime(value) {
@@ -232,3 +234,19 @@ async function loadWeatherForecast() {
 }
 
 loadWeatherForecast();
+
+function switchPage(pageName) {
+  pagePanels.forEach((panel) => {
+    panel.classList.toggle("is-active", panel.dataset.page === pageName);
+  });
+
+  pageButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.pageTarget === pageName);
+  });
+}
+
+pageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    switchPage(button.dataset.pageTarget);
+  });
+});

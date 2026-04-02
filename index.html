@@ -51,36 +51,88 @@
           <span class="hero-title-sub">Schijndel</span>
         </h1>
       </header>
-      <p class="subtitle">Countdown tot de start · vrijdag 3 april 2026, 15:00</p>
+      <nav class="top-nav" aria-label="Hoofdnavigatie">
+        <button class="top-nav__item is-active" type="button" data-page-target="home">Home</button>
+        <button class="top-nav__item" type="button" data-page-target="boodschappen">Boodschappen</button>
+        <button class="top-nav__item" type="button" data-page-target="navigatie">Navigatie</button>
+      </nav>
 
-      <section class="countdown" aria-live="polite" aria-label="Countdown timer">
-        <div class="time-block">
-          <span id="days" class="time-value">00</span>
-          <span class="time-label">Dagen</span>
-        </div>
-        <div class="time-block">
-          <span id="hours" class="time-value">00</span>
-          <span class="time-label">Uren</span>
-        </div>
-        <div class="time-block">
-          <span id="minutes" class="time-value">00</span>
-          <span class="time-label">Minuten</span>
-        </div>
-        <div class="time-block">
-          <span id="seconds" class="time-value">00</span>
-          <span class="time-label">Seconden</span>
+      <section class="page-panel is-active" data-page="home">
+        <p class="subtitle">Countdown tot de start · vrijdag 3 april 2026, 15:00</p>
+
+        <section class="countdown" aria-live="polite" aria-label="Countdown timer">
+          <div class="time-block">
+            <span id="days" class="time-value">00</span>
+            <span class="time-label">Dagen</span>
+          </div>
+          <div class="time-block">
+            <span id="hours" class="time-value">00</span>
+            <span class="time-label">Uren</span>
+          </div>
+          <div class="time-block">
+            <span id="minutes" class="time-value">00</span>
+            <span class="time-label">Minuten</span>
+          </div>
+          <div class="time-block">
+            <span id="seconds" class="time-value">00</span>
+            <span class="time-label">Seconden</span>
+          </div>
+        </section>
+
+        <p id="status" class="status">Check-out the line-up:</p>
+        <a class="cta-button" href="https://www.paaspop.nl/nl/line-up" target="_blank" rel="noreferrer"
+          >Naar Paaspop Website</a
+        >
+
+        <section class="weather-section" aria-live="polite" aria-label="Weersverwachting Paaspop">
+          <h2 class="weather-title">Weersverwachting Paaspop</h2>
+          <p id="weather-status" class="weather-status">Weer laden...</p>
+          <div id="weather-cards" class="weather-cards"></div>
+        </section>
+      </section>
+
+      <section class="page-panel" data-page="boodschappen">
+        <p class="subtitle">De volledige boodschappenlijst staat in jullie Google Sheet</p>
+        <div class="list-card list-card--sheet">
+          <p class="list-card__title">Paaspop 2026 boodschappen</p>
+          <p class="list-card__hint">
+            Open de sheet om te zien wie wat meeneemt, aantallen en wat er nog resteert.
+          </p>
+          <a
+            class="cta-button"
+            href="https://docs.google.com/spreadsheets/d/19R8FW1QQcz22Z4RQA-4aNcjyFxnIwer1Zq_IpdgBMr0/edit?gid=509929299#gid=509929299"
+            target="_blank"
+            rel="noreferrer"
+            >Open boodschappenlijst (Google Sheets)</a
+          >
         </div>
       </section>
 
-      <p id="status" class="status">Check-out the line-up:</p>
-      <a class="cta-button" href="https://www.paaspop.nl/nl/line-up" target="_blank" rel="noreferrer"
-        >Naar Paaspop Website</a
-      >
-
-      <section class="weather-section" aria-live="polite" aria-label="Weersverwachting Paaspop">
-        <h2 class="weather-title">Weersverwachting Paaspop</h2>
-        <p id="weather-status" class="weather-status">Weer laden...</p>
-        <div id="weather-cards" class="weather-cards"></div>
+      <section class="page-panel" data-page="navigatie">
+        <p class="subtitle">
+          Fietsroute van Boomstraat 17 (Gemonde) naar bewaakte fietsenstalling Noord (VIP-fiets, Nonnenbos 6,
+          Schijndel)
+        </p>
+        <p class="nav-hint">
+          Google heeft geen “kortste route”-schakelaar in de ingesloten kaart. Open de route in de Google Maps-app
+          en vergelijk eventuele grijze alternatieven; kies daar de variant met de kleinste afstand.
+        </p>
+        <div class="map-wrap">
+          <iframe
+            title="Fietsroute naar Paaspop fietsenstalling Noord (Nonnenbos 6)"
+            class="map-embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?saddr=Boomstraat+17,+Gemonde,+Nederland&daddr=Nonnenbos+6,+Schijndel,+Nederland&dirflg=b&output=embed"
+          ></iframe>
+        </div>
+        <a
+          class="cta-button cta-button--secondary"
+          href="https://www.google.com/maps/dir/?api=1&origin=Boomstraat+17,+Gemonde,+Nederland&destination=Nonnenbos+6,+Schijndel,+Nederland&travelmode=bicycling"
+          target="_blank"
+          rel="noreferrer"
+          >Open fietsroute in Google Maps</a
+        >
       </section>
     </main>
 
