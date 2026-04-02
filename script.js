@@ -70,7 +70,7 @@ function tick() {
     statusEl.textContent = "Paaspop is begonnen!";
     clearInterval(intervalId);
   } else {
-    statusEl.textContent = "Nog even wachten...";
+    statusEl.textContent = "Check-out the line-up:";
   }
 }
 
