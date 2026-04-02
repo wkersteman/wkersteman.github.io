@@ -54,6 +54,7 @@
       <nav class="top-nav" aria-label="Hoofdnavigatie">
         <button class="top-nav__item is-active" type="button" data-page-target="home">Home</button>
         <button class="top-nav__item" type="button" data-page-target="boodschappen">Boodschappen</button>
+        <button class="top-nav__item" type="button" data-page-target="locatie">Locatie</button>
         <button class="top-nav__item" type="button" data-page-target="navigatie">Navigatie</button>
       </nav>
 
@@ -104,6 +105,37 @@
             target="_blank"
             rel="noreferrer"
             >Open boodschappenlijst (Google Sheets)</a
+          >
+        </div>
+      </section>
+
+      <section class="page-panel" data-page="locatie">
+        <p class="subtitle">Verblijf tijdens Paaspop weekend</p>
+        <div class="list-card list-card--locatie">
+          <p class="list-card__title">Adres in Gemonde</p>
+          <address class="locatie-address">
+            Boomstraat 17<br />
+            Gemonde<br />
+            Nederland
+          </address>
+          <p class="list-card__hint">
+            Dit is het vertrekpunt voor de fietsroute naar Paaspop (zie tab Navigatie).
+          </p>
+          <div class="map-wrap map-wrap--compact">
+            <iframe
+              title="Locatie Boomstraat 17 Gemonde"
+              class="map-embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Boomstraat+17,+Gemonde,+Nederland&output=embed"
+            ></iframe>
+          </div>
+          <a
+            class="cta-button cta-button--secondary"
+            href="https://www.google.com/maps/search/?api=1&query=Boomstraat+17,+Gemonde,+Nederland"
+            target="_blank"
+            rel="noreferrer"
+            >Open in Google Maps</a
           >
         </div>
       </section>
