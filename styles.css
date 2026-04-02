@@ -28,7 +28,7 @@ body {
     radial-gradient(ellipse 50% 40% at 78% 75%, rgba(255, 194, 56, 0.28) 0, transparent 50%),
     radial-gradient(ellipse 40% 35% at 60% 30%, rgba(147, 51, 234, 0.22) 0, transparent 48%),
     linear-gradient(145deg, #08080f 0%, #130f23 52%, #1a0f2e 100%);
-  animation: gradientDrift 22s ease-in-out infinite alternate;
+  animation: gradientDrift 3.67s ease-in-out infinite alternate;
 }
 
 @keyframes gradientDrift {
@@ -56,7 +56,7 @@ body {
     rgba(255, 60, 120, 0.4) 100%
   );
   background-size: 400% 400%;
-  animation: auroraShift 18s ease-in-out infinite alternate;
+  animation: auroraShift 3s ease-in-out infinite alternate;
 }
 
 @keyframes auroraShift {
@@ -88,7 +88,7 @@ body {
 .bg-curves__svg {
   width: 100%;
   height: 100%;
-  animation: curvesDrift 30s ease-in-out infinite alternate;
+  animation: curvesDrift 5s ease-in-out infinite alternate;
 }
 
 .curve {
@@ -101,20 +101,20 @@ body {
   stroke: rgba(255, 142, 60, 0.5);
   stroke-width: 22;
   filter: blur(1px);
-  animation: curveWaveOne 20s ease-in-out infinite;
+  animation: curveWaveOne 3.33s ease-in-out infinite;
 }
 
 .curve--two {
   stroke: rgba(190, 115, 255, 0.36);
   stroke-width: 18;
   stroke-dasharray: 8 14;
-  animation: curveWaveTwo 24s ease-in-out infinite alternate;
+  animation: curveWaveTwo 4s ease-in-out infinite alternate;
 }
 
 .curve--three {
   stroke: rgba(255, 214, 130, 0.28);
   stroke-width: 14;
-  animation: curveWaveThree 28s ease-in-out infinite;
+  animation: curveWaveThree 4.67s ease-in-out infinite;
 }
 
 @keyframes curvesDrift {
@@ -166,7 +166,7 @@ body {
   border-radius: 50%;
   filter: blur(72px);
   opacity: 0.4;
-  animation: orbFloat 22s ease-in-out infinite;
+  animation: orbFloat 3.67s ease-in-out infinite;
 }
 
 .bg-orb--a {
@@ -228,7 +228,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   filter: saturate(1.25) contrast(1.05);
-  animation: kenBurns 38s ease-in-out infinite alternate;
+  animation: kenBurns 6.33s ease-in-out infinite alternate;
   will-change: transform;
 }
 
