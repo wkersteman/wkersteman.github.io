@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hub page linking to GitHub Pages projects. No trackers; static HTML only."
+    />
+    <meta name="theme-color" content="#0f1419" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; img-src 'self' data:; font-src 'self'; style-src 'self'; script-src 'none'; upgrade-insecure-requests;"
+    />
+    <title>My GitHub Pages hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>My GitHub Pages hub</h1>
+      <p class="lede">
+        Links to my sites on GitHub Pages. Replace <code>YOUR_USERNAME</code> and
+        paths below, then deploy this folder to GitHub Pages.
+      </p>
+    </header>
+
+    <main id="main">
+      <nav class="hub-nav" aria-label="GitHub Pages sites">
+        <h2 class="visually-hidden">Sites</h2>
+        <ul class="hub-list">
+          <li>
+            <a
+              href="https://YOUR_USERNAME.github.io/"
+              rel="noopener noreferrer"
+              >User site (root)</a
+            >
+            <span class="hub-list__hint">https://YOUR_USERNAME.github.io/</span>
+          </li>
+          <li>
+            <a
+              href="https://YOUR_USERNAME.github.io/example-project/"
+              rel="noopener noreferrer"
+              >Example project site</a
+            >
+            <span class="hub-list__hint"
+              >https://YOUR_USERNAME.github.io/example-project/</span
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/YOUR_USERNAME"
+              rel="noopener noreferrer"
+              >GitHub profile</a
+            >
+            <span class="hub-list__hint">github.com/YOUR_USERNAME</span>
+          </li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <p>Static page; no scripts or third-party assets.</p>
+    </footer>
+  </body>
+</html>
